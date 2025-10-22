@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<math.h>
 /*lista 2*/
@@ -67,6 +68,59 @@ int main(void) {
 		printf("Raizes: %f e %f\n", x1, x2);
 	}
 	/*q8*/
+	/*q9*/
+	int val1, val2, val3;
+	printf("Digite tres valores inteiros: ");
+	scanf("%d %d %d", &val1, &val2, &val3);
+	if (val1 >= val2 && val1 >= val3) {
+		printf("O maior valor eh: %d\n", val1);
+	}
+	else if (val2 >= val1 && val2 >= val3) {
+		printf("O maior valor eh: %d\n", val2);
+	}else if (val3 >= val1 && val3 >= val2) {
+		printf("O maior valor eh: %d\n", val3);
+	}
+	else {
+		printf("Todos os valores sao iguais: %d\n", val1);
+	}
+	/*q10*/
+	int v1, v2, v3;
+	printf("Digite tres valores inteiros: ");
+	scanf("%d %d %d", &v1, &v2, &v3);
+	/*q11*/
+	float p1, p2, p3,media;
+	printf("digite duas notas: ");
+	scanf("%f %f", &p1, &p2);
+	media = (p1 + p2) / 2;
+	if (media> 5.0) {
+		if (p1 > 3.0 && p2 > 3.0) {
+			printf("Aprovado\n");
+			printf("%f\n", media);
+		}
+	}
+	else {
+		printf("Ta de PF\n");
+		printf("Digite a nota da p3: ");
+		scanf("%f", &p3);
+		if (p1 > p2) {
+			media = (p1 + p3) / 2;
+			if ((media >= 5.0) {
+				printf("Aprovado com pf e pela p1\n");
+				printf("%f\n", media);
+			}
+		}
+		else if(p2 > p1){
+			media = (p2 + p3) / 2;
+			if (media>= 5.0) {
+				printf("Aprovado com pf e pela p2\n");
+				printf("%f\n", media);
+			}
+
+		}
+		else {
+			printf("Reprovado\n");
+		}
+	}
 
 	return 0; 
 }
