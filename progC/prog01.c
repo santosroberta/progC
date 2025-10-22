@@ -1,5 +1,6 @@
 #include<stdio.h>
-#include<math.h>
+
+/*lista 1*/
 int somaDiv(int num) {
 	/*q2*/
 	int cont = 0;
